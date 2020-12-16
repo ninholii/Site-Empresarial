@@ -1,0 +1,142 @@
+/*Colocando imagem de fundo no View*/
+.view {
+    background: url("../imgs/backAtt.png")no-repeat center;
+    background-size: cover;
+}
+/*Ajustando a imagem para ficar 100% de altura*/
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+/**/
+
+.textMain{
+    color: white !important;
+    font-family: 'Sen', sans-serif;
+}
+
+/*Menu Nav*/
+.fundoNav{
+    background-color: #00000044;
+
+}
+.icones{
+    font-size: 13pt;
+    color: white;
+}
+.faceIcon:hover{
+    color: #3b5998;
+}
+.whatsIcon:hover{
+    color: #78c639;
+}
+.emailIcon:hover{
+    color: #af9500;
+}
+
+.navAdapt ul li .nav-link{
+    border-bottom: 1px solid transparent;
+}
+
+.navAdapt ul li .nav-link:focus{
+    color: white !important;
+    border-bottom: 1px solid white;
+}
+
+/*Main Estilos*/
+.comprarBotao{
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+}
+
+.comprarBotao:hover{
+    background-color: white;
+}
+
+/*Portfolio*/
+.port{
+    min-height: 100%;
+    background: url("../imgs/backMeio.png") no-repeat top;
+}
+
+.port a{
+    margin-top:10%;  
+}
+.portDrop{
+    border: 3px solid #005c5c;
+    border-radius: 10px;
+    color: white;
+}
+
+.portDrop:hover, .portDrop:focus{
+    background: #005c5c;
+    box-shadow: none;
+    border-radius: 0px;
+    color: white;
+}
+
+/* Orçamento */
+
+.orcamento{
+    background: url("../imgs/orcamento.jpeg") center;
+    min-height: 100%;
+}
+
+.orcamento form{
+    color: white;
+    margin-top: 10%;
+}
+
+.orcamento form button{
+    background: #005c5c;
+    border: none;
+}
+
+.orcamento form button:hover{
+    background: black;
+}
+
+
+/*Animações JS*/
+[data-anime]{
+    opacity: 0;
+    transition: all 2s;
+}
+
+[data-anime="left"]{
+    transform: translate3d(-200px, 0, 0);
+}
+
+[data-anime="right"]{
+    transform: translate3d(200px, 0, 0);
+}
+
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+/* [data-sla]{
+    opacity: 0;
+    background: url("../imgs/loadGif.gif") no-repeat center;
+    overflow: hidden;
+    background-size: 100%;
+    position: fixed;
+    transition: all 1s;
+}
+
+[data-sla="oi"]{
+    transform: translate3d(0, 0, 0);
+}
+
+[data-sla].pronto{
+    opacity: 1;
+    background: none;
+    transition: all 1s;
+    position: relative;
+    transform: translate3d(0, 0, 0);
+    overflow: auto;
+} */
